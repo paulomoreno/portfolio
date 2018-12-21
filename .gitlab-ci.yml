@@ -1,0 +1,34 @@
+stages:
+  # - test
+  - build
+  - deploy
+
+before_script:
+  - npm install
+
+cache:
+  paths:
+    - node_modules/
+    - functions/node_modules/
+
+# test:
+#   stage: test
+#   script:
+#     - echo "Running tests"
+#     - npm run test
+
+build:
+  stage: build
+  script:
+    - echo "Building the app"
+    - npm run build
+
+deploy:
+  stage: deploy
+  environment: Production
+  only:
+    - master
+  script:
+    - npm run build
+    - rm -rf /home/www/react-build/*
+    - mv public/* /home/www/react-build/
