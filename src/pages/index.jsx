@@ -290,7 +290,7 @@ const Index = () => (
             I work with technology and I like the positive impact that it can have on people's lives. 
             Currently, I work with web development and UX (and I do have some mobile experience). I like how
             the web and mobile environments can reach users and provide value on their daily tasks. So that's 
-            why I apply some UX concepts; to make sure I deliver the most value for users.
+            why I apply some UX concepts; to make sure I deliver the most value for  users.
           </AboutDesc>
         </Inner>
       </Content>
