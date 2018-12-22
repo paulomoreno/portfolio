@@ -139,10 +139,6 @@ const Footer = styled.footer`
   }
 `;
 
-const FooterSmallerText = styled.p`
-  ${tw('text-center text-grey font-sans text-xs lg:text-sm')};
-`;
-
 const Index = () => (
   <React.Fragment>
     <SEO />
@@ -326,10 +322,7 @@ const Index = () => (
         </Inner>
         <Footer>
           &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.<br/>
-          <FooterSmallerText>
-            Icons: Coffee by Made from the Noun Project, Camera by Alexander Blagochevsky from the Noun Project, Game by asianson.design from the Noun Project, Computer Mouse by ProSymbols from the Noun Project, CPU by Alina Oleynik from the Noun Project, Cup by arif fajar yulianto from the Noun Project
-          </FooterSmallerText>
+          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. <a href="/icons">Icons Credits</a>
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
