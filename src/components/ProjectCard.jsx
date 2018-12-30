@@ -31,8 +31,8 @@ const IconImg = styled.img`
   ${tw('w-16 xl:w-24 h-auto')};
 `;
 
-const ProjectCard = ({ title, link, children, bg, icon, iconAlt }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+const ProjectCard = ({ title, link, children, bg, icon, iconAlt, target='' }) => (
+  <Wrapper href={link} target={target} rel="noopener noreferrer" bg={bg}>
     { icon ? 
       <IconImg src={icon} alt={iconAlt} /> 
       : null
