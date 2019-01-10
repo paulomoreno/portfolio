@@ -3,12 +3,13 @@ import React from 'react';
 import styled from 'react-emotion';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
- 
+import { waveAnimation } from '../styles/animations';
+
 import donwload_app_store from '../images/download_on_the_app_store_badge_us-uk_135x40.svg';
 import screenshot_1 from '../images/beertracker/screenshot.png';
 
 import '../styles/global';
-// import '../styles/beerTracker';
+import '../styles/beerTracker';
 
 const Content = styled.div`
   ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
@@ -20,12 +21,13 @@ const Hero = styled.div`
 
 const HorizontalWrapper = styled.div`
   width: 100%;
-  ${tw('shadow-lg flex justify-start flex-auto items-center flex-row')};
+  ${tw('flex justify-start flex-auto items-center flex-row')};
 `;
 
 const VerticalWrapper = styled.div`
   width: 100%;
   ${tw('flex justify-center flex-col')};
+  z-index: 25;
 `;
 
 const Title = styled.h1`
@@ -40,10 +42,25 @@ const Subtitle = styled.p`
 
 const Screenshot = styled.img`
   ${tw('w-48 xl:w-2/5 h-auto pr-16')};
+  z-index: 0;
 `;
 
 const DonwloadAppStore = styled.img`
   ${tw('w-32 xl:w-48 h-auto')};
+`;
+
+const WaveWrapper = styled.div`
+  ${tw('absolute pin-b pin-r w-full')};
+  transform: matrix(1, 0, 0, -1, 0, 0);
+`;
+
+const InnerWave = styled.div`
+  ${tw('relative h-full')};
+  svg {
+    width: 100%;
+    height: 40vh;
+  }
+  opacity: 0.5;
 `;
 
 const Index = () => (
@@ -59,6 +76,22 @@ const Index = () => (
           </VerticalWrapper>
         </HorizontalWrapper>
       </Hero>
+
+      <WaveWrapper>
+          <InnerWave>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
+              <path className={waveAnimation}>
+                <animate
+                  attributeName="d"
+                  values="M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z"
+                  repeatCount="indefinite"
+                  dur="30s"
+                />
+              </path>
+            </svg>
+          </InnerWave>
+        </WaveWrapper>
+
     </Content>
   </React.Fragment>
 );

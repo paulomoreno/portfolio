@@ -297,7 +297,7 @@ const Index = () => (
       <Divider fill="#23262b" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
-            <svg xmlns="http://www.w3.org/2000/svg" viewcoffee_mug="0 0 800 338.05" preserveAspectRatio="none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
               <path className={waveAnimation}>
                 <animate
                   attributeName="d"

@@ -3,6 +3,6 @@ import { injectGlobal } from 'emotion';
 
 injectGlobal`
   html {
-    background-color: #333;
+    background-color: #1a1a1a;
   }
 `;
