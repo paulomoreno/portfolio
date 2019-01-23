@@ -21,7 +21,7 @@ const Hero = styled.div`
 
 const HorizontalWrapper = styled.div`
   width: 100%;
-  ${tw('flex justify-start flex-auto items-center flex-row')};
+  ${tw('flex justify-start flex-auto items-center flex-col md:flex-row')};
 `;
 
 const VerticalWrapper = styled.div`
@@ -41,7 +41,7 @@ const Subtitle = styled.p`
 `;
 
 const Screenshot = styled.img`
-  ${tw('w-48 xl:w-2/5 h-auto pr-16')};
+  ${tw('w-48 xl:w-2/5 h-auto md:pr-16')};
   z-index: 0;
 `;
 
@@ -97,7 +97,7 @@ const Index = () => (
           <VerticalWrapper>
             <Title>Beer Tracker</Title>
             <Subtitle>Easily track how many beers (glasses, mugs, cans, bottles...) you drink.</Subtitle>
-            <a href="#"><DonwloadAppStore src={donwload_app_store} alt="Donwload on the App Store" /></a>
+            {/* <a href="#"><DonwloadAppStore src={donwload_app_store} alt="Donwload on the App Store" /></a> */}
           </VerticalWrapper>
         </HorizontalWrapper>
       </Hero>
