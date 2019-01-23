@@ -16,7 +16,7 @@ const Content = styled.div`
 `;
 
 const Hero = styled.div`
-  ${tw('w-full xl:w-2/3')};
+  ${tw('pt-16 w-full xl:w-2/3')};
 `;
 
 const HorizontalWrapper = styled.div`
@@ -50,7 +50,7 @@ const DonwloadAppStore = styled.img`
 `;
 
 const WaveWrapper = styled.div`
-  ${tw('absolute pin-b pin-r w-full')};
+  ${tw('absolute pin-b pin-r fixed w-full')};
   transform: matrix(1, 0, 0, -1, 0, 0);
 `;
 
@@ -63,8 +63,33 @@ const InnerWave = styled.div`
   opacity: 0.5;
 `;
 
+const Navbar = styled.div`
+  ${tw('pin-t h-16 w-full absolute')};
+  background-color: rgba(0,0,0,0.5);
+`;
+
+const NavbarContainer = styled.div`
+  ${tw('w-2/3 mx-auto text-white flex items-center h-full')};
+`;
+
+const NavbarLink = styled.a`
+  ${tw('text-white text-2xl no-underline font-sans text-orange')};
+  border-width: 1px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &:hover {
+    transform: translateY(-3px);
+  }  
+`;
+
 const Index = () => (
   <React.Fragment>
+
+    <Navbar>
+      <NavbarContainer>
+        <NavbarLink href="/">Paulo Moreno</NavbarLink>
+      </NavbarContainer>
+    </Navbar>
+
     <Content speed={0.4} offset={0}>
       <Hero>
         <HorizontalWrapper>
