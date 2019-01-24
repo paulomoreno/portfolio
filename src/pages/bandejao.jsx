@@ -6,7 +6,7 @@ import 'typeface-open-sans';
 import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import { rotate } from '../styles/animations';
 import triangle from '../images/triangle.svg';
- 
+
 import '../styles/global';
 
 const Content = styled(ParallaxLayer)`
