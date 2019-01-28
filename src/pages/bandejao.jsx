@@ -6,7 +6,7 @@ import 'typeface-open-sans';
 import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import { rotate } from '../styles/animations';
 import triangle from '../images/triangle.svg';
- 
+
 import '../styles/global';
 
 const Content = styled(ParallaxLayer)`
@@ -38,13 +38,23 @@ const Subtitle = styled.p`
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
+const Footer = styled.p`
+  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
+  a {
+    color: #e07628;
+    text-decoration: none;
+  }
+`;
+
 const Index = () => (
   <React.Fragment>
     <Parallax pages={1}>
       <Content speed={0.4} offset={0}>
         <Hero>
             <Title>Bandejão</Title>
-            <Subtitle>Under construction</Subtitle>
+            <Subtitle>Under construction.</Subtitle>
+            <Footer>Check out the <a href="http://paulomoreno.me/bandejao/app/">iOS App</a> and the <a href="http://paulomoreno.me/bandejao/">Web version</a>.</Footer>
+
         </Hero>
       </Content>
     </Parallax>
