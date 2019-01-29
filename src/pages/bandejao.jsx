@@ -53,7 +53,7 @@ const Index = () => (
         <Hero>
             <Title>Bandejão</Title>
             <Subtitle>Under construction.</Subtitle>
-            <Footer>Check out the <a href="http://paulomoreno.me/bandejao/app/">iOS App</a> and the <a href="http://paulomoreno.me/bandejao/">Web version</a>.</Footer>
+            <Footer>Check out the <a href="http://archive.paulomoreno.me/bandejao/app/">iOS App</a> and the <a href="http://archive.paulomoreno.me/bandejao/">Web version</a>.</Footer>
 
         </Hero>
       </Content>
