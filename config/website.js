@@ -5,7 +5,7 @@ module.exports = {
 
   siteTitle: 'Paulo Moreno', // Navigation and Site Title
   siteTitleAlt: 'Paulo Moreno', // Alternative Site title for SEO
-  siteUrl: 'https://dev.paulomoreno.me', // Domain of your site. No trailing slash!
+  siteUrl: 'http://paulomoreno.me', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/images/avatar.jpeg', // Used for SEO and manifest
   siteDescription: 'Personal portfolio',
