@@ -3,13 +3,13 @@ import React from 'react';
 import styled from 'react-emotion';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
-import { waveAnimation } from '../styles/animations';
+import { waveAnimation } from '../../styles/animations';
 
-import donwload_app_store from '../images/download_on_the_app_store_badge_us-uk_135x40.svg';
-import screenshot_1 from '../images/beertracker/screenshot.png';
+import donwload_app_store from '../../images/download_on_the_app_store_badge_us-uk_135x40.svg';
+import screenshot_1 from '../../images/beertracker/screenshot.png';
 
-import '../styles/global';
-import '../styles/beerTracker';
+import '../../styles/global';
+import '../../styles/beerTracker';
 
 const Content = styled.div`
   ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
