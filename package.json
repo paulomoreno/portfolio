@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Gatsby Starter Portfolio Cara",
+  "name": "paulomoreno-porfolio",
+  "description": "Paulo Moreno's Portfolio",
   "version": "2.0.0",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Paulo Moreno <paulomorenoo@gmail.com>",
+  "homepage": "https://paulomoreno.me",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-tailwind": "^0.1.10",
@@ -18,6 +19,7 @@
     "gatsby-plugin-sharp": "^2.0.10",
     "gatsby-source-filesystem": "^2.0.6",
     "gatsby-transformer-sharp": "^2.1.7",
+    "gh-pages": "^2.1.1",
     "postcss": "^7.0.5",
     "postcss-cli": "^6.0.1",
     "prop-types": "^15.6.2",
@@ -41,7 +43,9 @@
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "predev": "postcss tailwind.css -o tailwind.custom.css",
-    "prebuild": "postcss tailwind.css -o tailwind.custom.css"
+    "prebuild": "postcss tailwind.css -o tailwind.custom.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
