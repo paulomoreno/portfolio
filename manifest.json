@@ -1,0 +1,12 @@
+{
+  "main.js": "render-page.js",
+  "main.js.map": "render-page.js.map",
+  "static/avatar.jpeg": "static/avatar-9063f8efe838bdca42b33f4b254db692.jpeg",
+  "static/bandejao_icon.png": "static/bandejao_icon-90de67d9c66be2190cd1fc0715116afa.png",
+  "static/beerTracker_icon.png": "static/beerTracker_icon-3fa5fb70f9ec3548cc7af14640a1d7e7.png",
+  "static/compare_icon.png": "static/compare_icon-d022f49572fe8fad302a8e19c12c1ffb.png",
+  "static/das_icon.png": "static/das_icon-8161632b10fed349e5786ad3b5b4dbe9.png",
+  "static/download_on_the_app_store_badge_us-uk_135x40.svg": "static/download_on_the_app_store_badge_us-uk_135x40-9893248df94feb2035362183086287ac.svg",
+  "static/hero_avatar.png": "static/hero_avatar-b8ec98e9c74fc3751b925ce5f604053b.png",
+  "static/screenshot.png": "static/screenshot-f5a924391058cec014d99f78452e3a91.png"
+}

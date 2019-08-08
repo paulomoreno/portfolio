@@ -1,0 +1,31 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/offline-plugin-app-shell-fallback/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-01e0c280f48191045b2e.js>; rel=preload; as=script
+/bandejao/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </0.7a7b9b7e84c299bd4935.css>; rel=preload; as=script
+/beer-tracker/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </component---src-pages-beer-tracker-index-jsx.7a7b9b7e84c299bd4935.css>; rel=preload; as=script
+/beer-tracker/privacy-policy/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </component---src-pages-beer-tracker-privacy-policy-jsx-ff88d810f3d7bb540871.js>; rel=preload; as=script
+/compare/privacy-policy/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </component---src-pages-compare-privacy-policy-jsx-24a22c372a48feaa2e2c.js>; rel=preload; as=script
+/icons/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </0.7a7b9b7e84c299bd4935.css>; rel=preload; as=script
+/
+  Link: </webpack-runtime-306ff72a3447741dc748.js>; rel=preload; as=script
+  Link: </0.7a7b9b7e84c299bd4935.css>; rel=preload; as=script
